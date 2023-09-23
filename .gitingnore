@@ -1,5 +1,5 @@
 .upm
-node_modules
+node_modules/
 .config
 .env
 .replit
