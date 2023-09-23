@@ -10,7 +10,7 @@ const axios = require('axios');
 
 // web hook for outgoing messages you can get one at https://{discourseurl}/admin/plugins/chat
 const webhookUrl = process.env['webhook']
-// secret string for webhook pointed here
+// secret string for webhook pointed here at https://{discourseurl}/admin/api/web_hooks
 const secret = process.env['incomingsecret']
 // chat channel id to listen to
 const chatid = 2
