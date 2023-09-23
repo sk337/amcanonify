@@ -1,0 +1,548 @@
+html, body{
+  background-color:#444;
+  color:#fff;
+  font-family:roboto;
+}
+
+.tborder {
+  width:95vw;
+  height:95vh;
+  margin:auto;
+  background-color:#333;
+  border-radius:15px;
+}
+
+.header{
+  background-color:#26445f;
+  width:auto;
+  border-top-right-radius:15px;
+  border-top-left-radius:15px;
+  padding-left:10px;
+  font-weight:bold;
+}
+
+.chat-container{
+  height:85vh;
+  margin-left:2vw;
+  margin-right:2vw;
+  /* background-color:#222; */
+  border-radius:10px;
+}
+
+.chat{
+  background-color:#222;
+  height:80vh;
+}
+
+.message-box{
+  border-style:solid;
+  border-color:#555;
+  color:#fff;
+  font-family:roboto;
+  border-radius:5px;
+  background-color:#222;
+  margin-top:1vh;
+  height:4vh;
+  width:81vw;
+}
+
+.sub-button{
+  border-style:solid;
+  border-color:#555;
+  color:#fff;
+  font-family:roboto;
+  border-radius:5px;
+  background-color:#333;
+  height:5vh;
+  width:8vw;
+}
+
+.green{
+  color:green;
+}
+
+.grey{
+  color:grey;
+}
+
+@-webkit-keyframes rf_dep {
+    from {
+        filter: hue-rotate(-360deg)
+    }
+
+    to {
+        filter: hue-rotate(360deg)
+    }
+}
+
+@keyframes rf_dep {
+    from {
+        filter: hue-rotate(-360deg)
+    }
+
+    to {
+        filter: hue-rotate(360deg)
+    }
+}
+
+@-webkit-keyframes rf_dep1 {
+    from {
+        -webkit-transform: rotate(0deg)
+    }
+
+    to {
+        -webkit-transform: rotate(359deg)
+    }
+}
+
+@keyframes rf_dep1 {
+    from {
+        transform: rotate(0deg)
+    }
+
+    to {
+        transform: rotate(359deg)
+    }
+}
+
+@-webkit-keyframes rf_dep2 {
+    from {
+        color: red
+    }
+
+    15% {
+        color: orange
+    }
+
+    30% {
+        color: yellow
+    }
+
+    45% {
+        color: green
+    }
+
+    60% {
+        color: blue
+    }
+
+    75% {
+        color: indigo
+    }
+
+    90% {
+        color: violet
+    }
+
+    to {
+        color: red
+    }
+}
+
+@keyframes rf_dep2 {
+    from {
+        color: red
+    }
+
+    15% {
+        color: orange
+    }
+
+    30% {
+        color: yellow
+    }
+
+    45% {
+        color: green
+    }
+
+    60% {
+        color: blue
+    }
+
+    75% {
+        color: indigo
+    }
+
+    90% {
+        color: violet
+    }
+
+    to {
+        color: red
+    }
+}
+
+@-webkit-keyframes rf_dep3 {
+    0% {
+        background-color: darkred
+    }
+
+    100% {
+        background-color: darkorange
+    }
+}
+
+@keyframes rf_dep3 {
+    0% {
+        background-color: darkred
+    }
+
+    100% {
+        background-color: darkorange
+    }
+}
+
+.rf_i {
+    white-space: nowrap
+}
+
+.rf_i:before {
+    font-family: 'ForkAwesome';
+    font-weight: 900;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    font-size: 0.75em;
+    margin-right: 3px;
+    margin-top: -3px;
+    vertical-align: middle
+}
+
+.rf_banned {
+    color: #D3D3D3;
+    text-decoration: line-through;
+    white-space: nowrap
+}
+
+.rf_await {
+    color: #D3D3D3;
+    white-space: nowrap
+}
+
+.rf_crawler {
+    color: #BF5FFF;
+    white-space: nowrap
+}
+
+.rf_noob {
+    color: #17C0CC;
+    white-space: nowrap
+}
+
+.rf_member {
+    color: #1ad8e5;
+    font-weight: bold;
+    white-space: nowrap
+}
+
+.rf_elite {
+    color: #1df0ff;
+    font-weight: bold;
+    white-space: nowrap
+}
+
+.rf_leet {
+    color: #aac745;
+    font-weight: bold;
+    white-space: nowrap
+}
+
+.rf_uber {
+    color: #ceff25;
+    font-weight: bold;
+    white-space: nowrap
+}
+
+.rf_tryhard {
+    color: #1E90FF;
+    text-shadow: 0px 0px 3px #1E90FF;
+    background: transparent url(/resources/sparkles/csc.gif);
+    font-weight: bold;
+    white-space: nowrap
+}
+
+.rf_topd {
+    -webkit-animation: rf_dep2 3s infinite linear;
+    animation: rf_dep2 3s infinite linear;
+    font-weight: 900;
+    text-decoration: underline double;
+    font-variant: small-caps
+}
+
+.rf_top {
+    white-space: nowrap
+}
+
+.rf_top:before {
+    content: "[TopD] ";
+    -webkit-animation: rf_dep2 3s infinite linear;
+    animation: rf_dep2 3s infinite linear;
+    font-weight: bold;
+    font-variant: small-caps;
+    font-style: normal
+}
+
+.rf_godx {
+    color: #F1C40F;
+    font-weight: 900
+}
+
+.rf_god,
+.rf_GOD {
+    color: #F1C40F !important;
+    font-weight: 900
+}
+
+.rf_mvpx {
+    color: #fff;
+    font-weight: 700
+}
+
+.rf_mvp,
+.rf_MVP {
+    color: #fff !important;
+    font-weight: 700
+}
+
+
+.rf_vipx {
+    color: #0c0;
+    font-weight: 700
+}
+
+.rf_vip,
+.rf_VIP {
+    color: #0c0 !important;
+    font-weight: 700
+}
+
+
+.rf_sub {
+    -webkit-animation: rf_dep 5s infinite linear;
+    animation: rf_dep 5s infinite linear;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: border-box;
+    color: #FF512F;
+    font-weight: 900;
+    text-shadow: 0px 0px 5px #727309;
+    background-image: url(/resources/sparkles/sparkles.gif), linear-gradient(90deg, #f00 0%, #29ff00 100%, #fff)
+}
+
+.rf_sub:before {
+    content: "\f863";
+    -webkit-animation: rf_dep1 2s infinite linear;
+    animation: rf_dep1 2s infinite linear;
+    -webkit-text-fill-color: initial
+}
+
+.rf_owner {
+    text-shadow: 1px 1px 5px #000;
+    color: #f90;
+    font-weight: 900;
+    white-space: nowrap
+}
+
+.rf_o {
+    white-space: nowrap
+}
+
+.rf_o:before {
+    content: "[Owner] ";
+    color: #a50000;
+    font-weight: bold;
+    font-style: normal
+}
+
+.rf_admin {
+    color: #f24b4b;
+    text-shadow: 0px 0px 5px #0c0c0c;
+    font-weight: 900;
+    white-space: nowrap
+}
+
+.rf_a {
+    white-space: nowrap
+}
+
+.rf_a:before {
+    content: "[Admin] ";
+    color: #a50000;
+    font-weight: bold;
+    font-style: normal
+}
+
+.rf_modp {
+    color: #c61aff;
+    text-shadow: 0px 0px 5px #090909;
+    font-weight: bold;
+    white-space: nowrap
+}
+
+.rf_mp {
+    white-space: nowrap
+}
+
+.rf_mp:before {
+    content: "[Mod+] ";
+    color: #a50000;
+    font-weight: bold;
+    font-style: normal
+}
+
+.rf_mod {
+    color: #a868ed;
+    text-shadow: 0px 0px 5px #090909;
+    font-weight: bold;
+    white-space: nowrap
+}
+
+.rf_m {
+    white-space: nowrap
+}
+
+.rf_m:before {
+    content: "[Mod] ";
+    color: #a50000;
+    font-weight: bold;
+    font-style: normal
+}
+
+.rf_tmod {
+    color: #26f6a5;
+    text-shadow: 1px 1px 3px #000;
+    white-space: nowrap
+}
+
+.rf_t {
+    white-space: nowrap
+}
+
+.rf_t:before {
+    content: "[T-Mod] ";
+    color: #a50000;
+    font-weight: bold;
+    font-style: normal
+}
+
+.bf_retired:before {
+    content: "[Retired] ";
+    color: #aa7171;
+    font-weight: bold;
+    font-style: normal
+}
+
+.rf_staffp {
+    background-color: #96281B;
+    animation: rf_dep3 3s infinite linear;
+    -webkit-animation: rf_dep3 3s infinite linear;
+    color: white;
+    border-radius: 2px;
+    padding: 3px 6px;
+    white-space: nowrap;
+    font-weight: bold
+}
+
+.rf_staffp:before {
+    content: "\f071";
+    font-family: 'ForkAwesome';
+    font-weight: 900;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    font-size: 0.75em;
+    margin-right: 3px;
+    margin-top: -3px;
+    vertical-align: middle
+}
+
+.rf_staffp:after {
+    content: "\f071";
+    font-family: 'ForkAwesome';
+    font-weight: 900;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    font-size: 0.75em;
+    margin-left: 3px;
+    margin-top: -3px;
+    vertical-align: middle
+}
+
+.rf_suspect {
+    color: #D3D3D3;
+    white-space: nowrap
+}
+
+.rf_sus {
+    white-space: nowrap
+}
+
+.rf_sus:before {
+    content: "Â¿Scammer? ";
+    color: red;
+    font-weight: 900;
+    font-style: normal
+}
+
+.rf_img {
+    max-height: 20px;
+    white-space: nowrap
+}
+
+.rf_awardsi {
+    font-size: 24px
+}
+
+.rf_tprefix {
+    font-size: 12px;
+    color: #fff;
+    border-radius: 2px;
+    padding: 2px 5px;
+    text-transform: uppercase;
+    font-weight: 600
+}
+
+.rf_sparkles {
+    background: transparent url(/resources/sparkles/sparkles.gif)
+}
+
+.rf_rain {
+    background: transparent url(/resources/sparkles/rain.gif)
+}
+
+.rf_brain {
+    background: transparent url(/resources/sparkles/csc.gif)
+}
+
+.rf_stars {
+    background: transparent url(/resources/sparkles/starfall.gif)
+}
+
+.rf_rainbow {
+    -webkit-animation: rf_dep2 3s infinite linear;
+    animation: rf_dep2 3s infinite linear
+}
+
+.rf_blury {
+    text-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+    filter: blur(2px)
+}
+
+.rf_blury:hover {
+    text-shadow: unset;
+    filter: unset
+}
