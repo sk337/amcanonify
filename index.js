@@ -7,7 +7,7 @@ const io = new Server(server);
 const crypto = require('crypto');
 const axios = require('axios');
 
-
+app.settings['x-powered-by'] = false
 // web hook for outgoing messages you can get one at https://{discourseurl}/admin/plugins/chat
 const webhookUrl = process.env['webhook']
 // secret string for webhook pointed here at https://{discourseurl}/admin/api/web_hooks
